@@ -1,0 +1,75 @@
+body {
+    background-image: url('./vibrant-background.avif'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo-box {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .todo-box {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
+
+    #task-input, #due-date, #category {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .todo-box {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 6px 8px;
+    }
+
+    #task-input, #due-date, #category {
+        font-size: 12px;
+    }
+}
+
+#task-list .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
